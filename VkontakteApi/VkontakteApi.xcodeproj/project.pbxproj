@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		588A7DA6156D2BB7008115BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588A7DA5156D2BB7008115BA /* UIKit.framework */; };
+		588A7DA8156D2BB7008115BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588A7DA7156D2BB7008115BA /* Foundation.framework */; };
+		588A7DAA156D2BB7008115BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588A7DA9156D2BB7008115BA /* CoreGraphics.framework */; };
+		588A7DB0156D2BB7008115BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 588A7DAE156D2BB7008115BA /* InfoPlist.strings */; };
+		588A7DB2156D2BB7008115BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DB1156D2BB7008115BA /* main.m */; };
+		588A7DB6156D2BB7008115BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DB5156D2BB7008115BA /* AppDelegate.m */; };
+		588A7DB9156D2BB7008115BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DB8156D2BB7008115BA /* ViewController.m */; };
+		588A7DBC156D2BB7008115BA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588A7DBA156D2BB7008115BA /* ViewController.xib */; };
+		588A7DC5156D2BE7008115BA /* Vkontakte.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DC4156D2BE7008115BA /* Vkontakte.m */; };
+		588A7DD2156D2C98008115BA /* VkontakteLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DD0156D2C98008115BA /* VkontakteLoginViewController.m */; };
+		588A7DD3156D2C98008115BA /* VkontakteLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588A7DD1156D2C98008115BA /* VkontakteLoginViewController.xib */; };
+		588A7DD7156D2FDD008115BA /* VkontakteConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DD6156D2FDD008115BA /* VkontakteConstants.m */; };
+		588A7DEA156D5B4C008115BA /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DE9156D5B4C008115BA /* VKRequest.m */; };
+		588A7E0A156D6181008115BA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DEE156D6181008115BA /* NSObject+SBJson.m */; };
+		588A7E0B156D6181008115BA /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DF2156D6181008115BA /* SBJsonStreamParserState.m */; };
+		588A7E0C156D6181008115BA /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DF4156D6181008115BA /* SBJsonTokeniser.m */; };
+		588A7E0D156D6181008115BA /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DF6156D6181008115BA /* SBJsonUTF8Stream.m */; };
+		588A7E0E156D6181008115BA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DF8156D6181008115BA /* SBJsonParser.m */; };
+		588A7E0F156D6181008115BA /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DFA156D6181008115BA /* SBJsonStreamParser.m */; };
+		588A7E10156D6181008115BA /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DFC156D6181008115BA /* SBJsonStreamParserAccumulator.m */; };
+		588A7E11156D6181008115BA /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7DFE156D6181008115BA /* SBJsonStreamParserAdapter.m */; };
+		588A7E12156D6181008115BA /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E03156D6181008115BA /* SBJsonStreamWriterState.m */; };
+		588A7E13156D6181008115BA /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E05156D6181008115BA /* SBJsonStreamWriter.m */; };
+		588A7E14156D6181008115BA /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E07156D6181008115BA /* SBJsonStreamWriterAccumulator.m */; };
+		588A7E15156D6181008115BA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E09156D6181008115BA /* SBJsonWriter.m */; };
+		588A7E1C156D75BA008115BA /* CaptchaAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E1B156D75BA008115BA /* CaptchaAlertView.m */; };
+		588A7E23156D7E0D008115BA /* ImageViewWithActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 588A7E22156D7E0D008115BA /* ImageViewWithActivity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		588A7DA1156D2BB7008115BA /* VkontakteApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkontakteApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		588A7DA5156D2BB7008115BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		588A7DA7156D2BB7008115BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		588A7DA9156D2BB7008115BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		588A7DAD156D2BB7008115BA /* VkontakteApi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkontakteApi-Info.plist"; sourceTree = "<group>"; };
+		588A7DAF156D2BB7008115BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		588A7DB1156D2BB7008115BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		588A7DB3156D2BB7008115BA /* VkontakteApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VkontakteApi-Prefix.pch"; sourceTree = "<group>"; };
+		588A7DB4156D2BB7008115BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		588A7DB5156D2BB7008115BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		588A7DB7156D2BB7008115BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		588A7DB8156D2BB7008115BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		588A7DBB156D2BB7008115BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		588A7DC3156D2BE7008115BA /* Vkontakte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vkontakte.h; path = Classes/Vkontakte.h; sourceTree = "<group>"; };
+		588A7DC4156D2BE7008115BA /* Vkontakte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vkontakte.m; path = Classes/Vkontakte.m; sourceTree = "<group>"; };
+		588A7DCF156D2C98008115BA /* VkontakteLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VkontakteLoginViewController.h; path = Classes/VkontakteLoginViewController.h; sourceTree = "<group>"; };
+		588A7DD0156D2C98008115BA /* VkontakteLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VkontakteLoginViewController.m; path = Classes/VkontakteLoginViewController.m; sourceTree = "<group>"; };
+		588A7DD1156D2C98008115BA /* VkontakteLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VkontakteLoginViewController.xib; path = Classes/VkontakteLoginViewController.xib; sourceTree = "<group>"; };
+		588A7DD5156D2FDD008115BA /* VkontakteConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VkontakteConstants.h; path = Classes/VkontakteConstants.h; sourceTree = "<group>"; };
+		588A7DD6156D2FDD008115BA /* VkontakteConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VkontakteConstants.m; path = Classes/VkontakteConstants.m; sourceTree = "<group>"; };
+		588A7DE8156D5B4C008115BA /* VKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKRequest.h; path = Classes/VKRequest.h; sourceTree = "<group>"; };
+		588A7DE9156D5B4C008115BA /* VKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKRequest.m; path = Classes/VKRequest.m; sourceTree = "<group>"; };
+		588A7DED156D6181008115BA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		588A7DEE156D6181008115BA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		588A7DF1156D6181008115BA /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		588A7DF2156D6181008115BA /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		588A7DF3156D6181008115BA /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		588A7DF4156D6181008115BA /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		588A7DF5156D6181008115BA /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		588A7DF6156D6181008115BA /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		588A7DF7156D6181008115BA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		588A7DF8156D6181008115BA /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		588A7DF9156D6181008115BA /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		588A7DFA156D6181008115BA /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		588A7DFB156D6181008115BA /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		588A7DFC156D6181008115BA /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		588A7DFD156D6181008115BA /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		588A7DFE156D6181008115BA /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		588A7DFF156D6181008115BA /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		588A7E02156D6181008115BA /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		588A7E03156D6181008115BA /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		588A7E04156D6181008115BA /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		588A7E05156D6181008115BA /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		588A7E06156D6181008115BA /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		588A7E07156D6181008115BA /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		588A7E08156D6181008115BA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		588A7E09156D6181008115BA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		588A7E1A156D75BA008115BA /* CaptchaAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptchaAlertView.h; path = Classes/CaptchaAlertView.h; sourceTree = "<group>"; };
+		588A7E1B156D75BA008115BA /* CaptchaAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptchaAlertView.m; path = Classes/CaptchaAlertView.m; sourceTree = "<group>"; };
+		588A7E21156D7E0C008115BA /* ImageViewWithActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewWithActivity.h; path = Classes/ImageViewWithActivity.h; sourceTree = "<group>"; };
+		588A7E22156D7E0D008115BA /* ImageViewWithActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewWithActivity.m; path = Classes/ImageViewWithActivity.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		588A7D9E156D2BB7008115BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588A7DA6156D2BB7008115BA /* UIKit.framework in Frameworks */,
+				588A7DA8156D2BB7008115BA /* Foundation.framework in Frameworks */,
+				588A7DAA156D2BB7008115BA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		588A7D96156D2BB6008115BA = {
+			isa = PBXGroup;
+			children = (
+				588A7DAB156D2BB7008115BA /* VkontakteApi */,
+				588A7DA4156D2BB7008115BA /* Frameworks */,
+				588A7DA2156D2BB7008115BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		588A7DA2156D2BB7008115BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DA1156D2BB7008115BA /* VkontakteApi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		588A7DA4156D2BB7008115BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DA5156D2BB7008115BA /* UIKit.framework */,
+				588A7DA7156D2BB7008115BA /* Foundation.framework */,
+				588A7DA9156D2BB7008115BA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		588A7DAB156D2BB7008115BA /* VkontakteApi */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DC2156D2BC2008115BA /* Classes */,
+				588A7DB4156D2BB7008115BA /* AppDelegate.h */,
+				588A7DB5156D2BB7008115BA /* AppDelegate.m */,
+				588A7DB7156D2BB7008115BA /* ViewController.h */,
+				588A7DB8156D2BB7008115BA /* ViewController.m */,
+				588A7DBA156D2BB7008115BA /* ViewController.xib */,
+				588A7DAC156D2BB7008115BA /* Supporting Files */,
+			);
+			path = VkontakteApi;
+			sourceTree = "<group>";
+		};
+		588A7DAC156D2BB7008115BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DAD156D2BB7008115BA /* VkontakteApi-Info.plist */,
+				588A7DAE156D2BB7008115BA /* InfoPlist.strings */,
+				588A7DB1156D2BB7008115BA /* main.m */,
+				588A7DB3156D2BB7008115BA /* VkontakteApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		588A7DC2156D2BC2008115BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DEC156D6181008115BA /* SBJson */,
+				588A7E21156D7E0C008115BA /* ImageViewWithActivity.h */,
+				588A7E22156D7E0D008115BA /* ImageViewWithActivity.m */,
+				588A7DC3156D2BE7008115BA /* Vkontakte.h */,
+				588A7DC4156D2BE7008115BA /* Vkontakte.m */,
+				588A7DCF156D2C98008115BA /* VkontakteLoginViewController.h */,
+				588A7DD0156D2C98008115BA /* VkontakteLoginViewController.m */,
+				588A7DD1156D2C98008115BA /* VkontakteLoginViewController.xib */,
+				588A7DD5156D2FDD008115BA /* VkontakteConstants.h */,
+				588A7DD6156D2FDD008115BA /* VkontakteConstants.m */,
+				588A7DE8156D5B4C008115BA /* VKRequest.h */,
+				588A7DE9156D5B4C008115BA /* VKRequest.m */,
+				588A7E1A156D75BA008115BA /* CaptchaAlertView.h */,
+				588A7E1B156D75BA008115BA /* CaptchaAlertView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		588A7DEC156D6181008115BA /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DED156D6181008115BA /* NSObject+SBJson.h */,
+				588A7DEE156D6181008115BA /* NSObject+SBJson.m */,
+				588A7DEF156D6181008115BA /* Parser */,
+				588A7DFF156D6181008115BA /* SBJson.h */,
+				588A7E00156D6181008115BA /* Writer */,
+			);
+			name = SBJson;
+			path = Classes/SBJson;
+			sourceTree = "<group>";
+		};
+		588A7DEF156D6181008115BA /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DF0156D6181008115BA /* Private */,
+				588A7DF7156D6181008115BA /* SBJsonParser.h */,
+				588A7DF8156D6181008115BA /* SBJsonParser.m */,
+				588A7DF9156D6181008115BA /* SBJsonStreamParser.h */,
+				588A7DFA156D6181008115BA /* SBJsonStreamParser.m */,
+				588A7DFB156D6181008115BA /* SBJsonStreamParserAccumulator.h */,
+				588A7DFC156D6181008115BA /* SBJsonStreamParserAccumulator.m */,
+				588A7DFD156D6181008115BA /* SBJsonStreamParserAdapter.h */,
+				588A7DFE156D6181008115BA /* SBJsonStreamParserAdapter.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		588A7DF0156D6181008115BA /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				588A7DF1156D6181008115BA /* SBJsonStreamParserState.h */,
+				588A7DF2156D6181008115BA /* SBJsonStreamParserState.m */,
+				588A7DF3156D6181008115BA /* SBJsonTokeniser.h */,
+				588A7DF4156D6181008115BA /* SBJsonTokeniser.m */,
+				588A7DF5156D6181008115BA /* SBJsonUTF8Stream.h */,
+				588A7DF6156D6181008115BA /* SBJsonUTF8Stream.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		588A7E00156D6181008115BA /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				588A7E01156D6181008115BA /* Private */,
+				588A7E04156D6181008115BA /* SBJsonStreamWriter.h */,
+				588A7E05156D6181008115BA /* SBJsonStreamWriter.m */,
+				588A7E06156D6181008115BA /* SBJsonStreamWriterAccumulator.h */,
+				588A7E07156D6181008115BA /* SBJsonStreamWriterAccumulator.m */,
+				588A7E08156D6181008115BA /* SBJsonWriter.h */,
+				588A7E09156D6181008115BA /* SBJsonWriter.m */,
+			);
+			path = Writer;
+			sourceTree = "<group>";
+		};
+		588A7E01156D6181008115BA /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				588A7E02156D6181008115BA /* SBJsonStreamWriterState.h */,
+				588A7E03156D6181008115BA /* SBJsonStreamWriterState.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		588A7DA0156D2BB7008115BA /* VkontakteApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 588A7DBF156D2BB7008115BA /* Build configuration list for PBXNativeTarget "VkontakteApi" */;
+			buildPhases = (
+				588A7D9D156D2BB7008115BA /* Sources */,
+				588A7D9E156D2BB7008115BA /* Frameworks */,
+				588A7D9F156D2BB7008115BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkontakteApi;
+			productName = VkontakteApi;
+			productReference = 588A7DA1156D2BB7008115BA /* VkontakteApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		588A7D98156D2BB6008115BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = AZOFT;
+			};
+			buildConfigurationList = 588A7D9B156D2BB6008115BA /* Build configuration list for PBXProject "VkontakteApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 588A7D96156D2BB6008115BA;
+			productRefGroup = 588A7DA2156D2BB7008115BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				588A7DA0156D2BB7008115BA /* VkontakteApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		588A7D9F156D2BB7008115BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588A7DB0156D2BB7008115BA /* InfoPlist.strings in Resources */,
+				588A7DBC156D2BB7008115BA /* ViewController.xib in Resources */,
+				588A7DD3156D2C98008115BA /* VkontakteLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		588A7D9D156D2BB7008115BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588A7DB2156D2BB7008115BA /* main.m in Sources */,
+				588A7DB6156D2BB7008115BA /* AppDelegate.m in Sources */,
+				588A7DB9156D2BB7008115BA /* ViewController.m in Sources */,
+				588A7DC5156D2BE7008115BA /* Vkontakte.m in Sources */,
+				588A7DD2156D2C98008115BA /* VkontakteLoginViewController.m in Sources */,
+				588A7DD7156D2FDD008115BA /* VkontakteConstants.m in Sources */,
+				588A7DEA156D5B4C008115BA /* VKRequest.m in Sources */,
+				588A7E0A156D6181008115BA /* NSObject+SBJson.m in Sources */,
+				588A7E0B156D6181008115BA /* SBJsonStreamParserState.m in Sources */,
+				588A7E0C156D6181008115BA /* SBJsonTokeniser.m in Sources */,
+				588A7E0D156D6181008115BA /* SBJsonUTF8Stream.m in Sources */,
+				588A7E0E156D6181008115BA /* SBJsonParser.m in Sources */,
+				588A7E0F156D6181008115BA /* SBJsonStreamParser.m in Sources */,
+				588A7E10156D6181008115BA /* SBJsonStreamParserAccumulator.m in Sources */,
+				588A7E11156D6181008115BA /* SBJsonStreamParserAdapter.m in Sources */,
+				588A7E12156D6181008115BA /* SBJsonStreamWriterState.m in Sources */,
+				588A7E13156D6181008115BA /* SBJsonStreamWriter.m in Sources */,
+				588A7E14156D6181008115BA /* SBJsonStreamWriterAccumulator.m in Sources */,
+				588A7E15156D6181008115BA /* SBJsonWriter.m in Sources */,
+				588A7E1C156D75BA008115BA /* CaptchaAlertView.m in Sources */,
+				588A7E23156D7E0D008115BA /* ImageViewWithActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		588A7DAE156D2BB7008115BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				588A7DAF156D2BB7008115BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		588A7DBA156D2BB7008115BA /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				588A7DBB156D2BB7008115BA /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		588A7DBD156D2BB7008115BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		588A7DBE156D2BB7008115BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		588A7DC0156D2BB7008115BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkontakteApi/VkontakteApi-Prefix.pch";
+				INFOPLIST_FILE = "VkontakteApi/VkontakteApi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		588A7DC1156D2BB7008115BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkontakteApi/VkontakteApi-Prefix.pch";
+				INFOPLIST_FILE = "VkontakteApi/VkontakteApi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		588A7D9B156D2BB6008115BA /* Build configuration list for PBXProject "VkontakteApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				588A7DBD156D2BB7008115BA /* Debug */,
+				588A7DBE156D2BB7008115BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		588A7DBF156D2BB7008115BA /* Build configuration list for PBXNativeTarget "VkontakteApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				588A7DC0156D2BB7008115BA /* Debug */,
+				588A7DC1156D2BB7008115BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 588A7D98156D2BB6008115BA /* Project object */;
+}
